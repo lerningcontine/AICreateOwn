@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="大模型应用评测闭环图">
+  <rect width="1200" height="700" fill="#fbfcf8"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#182029">评测闭环</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#687381">每次改 Prompt、RAG、模型或数据，都要回到同一套评测集验证。</text>
+  <defs>
+    <marker id="arrowEval" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#687381"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, sans-serif">
+    <circle cx="600" cy="365" r="225" fill="white" stroke="#dfe6df" stroke-width="3"/>
+    <rect x="500" y="145" width="200" height="78" rx="12" fill="#3d7dd8"/>
+    <text x="600" y="192" text-anchor="middle" font-size="21" font-weight="700" fill="white">评测集</text>
+    <rect x="810" y="285" width="200" height="78" rx="12" fill="#4fb286"/>
+    <text x="910" y="332" text-anchor="middle" font-size="21" font-weight="700" fill="white">跑批测试</text>
+    <rect x="700" y="510" width="220" height="78" rx="12" fill="#ef6f6c"/>
+    <text x="810" y="557" text-anchor="middle" font-size="21" font-weight="700" fill="white">错误分类</text>
+    <rect x="280" y="510" width="220" height="78" rx="12" fill="#f6c85f"/>
+    <text x="390" y="557" text-anchor="middle" font-size="21" font-weight="700" fill="#182029">方案优化</text>
+    <rect x="190" y="285" width="200" height="78" rx="12" fill="#182029"/>
+    <text x="290" y="332" text-anchor="middle" font-size="21" font-weight="700" fill="white">灰度上线</text>
+    <text x="600" y="355" text-anchor="middle" font-size="25" font-weight="700" fill="#182029">数据说话</text>
+    <text x="600" y="388" text-anchor="middle" font-size="17" fill="#687381">不要凭感觉判断效果</text>
+  </g>
+  <g stroke="#687381" stroke-width="4" fill="none" marker-end="url(#arrowEval)">
+    <path d="M700 184 C800 205 875 240 908 283"/>
+    <path d="M910 363 C900 432 870 482 820 510"/>
+    <path d="M700 550 H502"/>
+    <path d="M390 510 C320 465 292 415 290 365"/>
+    <path d="M390 324 C420 250 460 210 500 185"/>
+  </g>
+</svg>

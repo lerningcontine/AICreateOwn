@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>大模型应用从0到1图文学习导航</title>
+    <style>
+      :root {
+        --ink: #182029;
+        --muted: #687381;
+        --paper: #fbfcf8;
+        --panel: #ffffff;
+        --line: #dfe6df;
+        --blue: #3d7dd8;
+        --mint: #4fb286;
+        --coral: #ef6f6c;
+        --gold: #f6c85f;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: var(--paper);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+        line-height: 1.7;
+      }
+      header {
+        padding: 52px clamp(20px, 6vw, 78px) 30px;
+        background: #eef6f0;
+        border-bottom: 1px solid var(--line);
+      }
+      h1 {
+        margin: 0;
+        max-width: 900px;
+        font-size: clamp(36px, 6vw, 72px);
+        line-height: 1.08;
+      }
+      .lead {
+        max-width: 850px;
+        color: var(--muted);
+        font-size: 20px;
+      }
+      main {
+        padding: 34px clamp(20px, 6vw, 78px) 70px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .card {
+        padding: 20px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        box-shadow: 0 10px 24px rgba(24, 32, 41, 0.06);
+      }
+      .card h3 { margin: 0 0 8px; }
+      .card p { color: var(--muted); }
+      a {
+        color: var(--blue);
+        font-weight: 800;
+      }
+      .figure {
+        margin: 28px 0;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+      }
+      .figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .tag {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: var(--coral);
+        font-weight: 900;
+      }
+      .section-title {
+        margin-top: 54px;
+        font-size: 34px;
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .step {
+        border-left: 5px solid var(--mint);
+      }
+      @media (max-width: 900px) {
+        .grid, .steps { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="tag">图文版入口</span>
+      <h1>大模型应用从 0 到 1学习导航</h1>
+      <p class="lead">这页把学习路线、应用架构、RAG、提示词、微调、评测这些关键内容用图串起来。想系统学习就从这里开始，再进入每个 Markdown 专题。</p>
+    </header>
+    <main>
+      <section class="figure">
+        <img src="./assets/images/roadmap.svg" alt="大模型应用学习路线图" />
+      </section>
+
+      <h2 class="section-title">先看这 6 张图</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>应用架构</h3>
+          <p>理解模型、RAG、工具、评测和业务层如何组合。</p>
+          <a href="./assets/images/llm_app_architecture.svg">打开大图</a>
+        </article>
+        <article class="card">
+          <h3>Prompt 结构</h3>
+          <p>把角色、任务、背景、规则、示例、输出格式说清楚。</p>
+          <a href="./assets/images/prompt_anatomy.svg">打开大图</a>
+        </article>
+        <article class="card">
+          <h3>RAG 流程</h3>
+          <p>从文档解析、切块、向量化，到检索、重排和生成。</p>
+          <a href="./assets/images/rag_pipeline.svg">打开大图</a>
+        </article>
+        <article class="card">
+          <h3>微调决策</h3>
+          <p>区分知识问题、提示词问题和行为稳定问题。</p>
+          <a href="./assets/images/fine_tuning_decision.svg">打开大图</a>
+        </article>
+        <article class="card">
+          <h3>评测闭环</h3>
+          <p>每次改动都回到评测集，而不是凭感觉判断。</p>
+          <a href="./assets/images/evaluation_loop.svg">打开大图</a>
+        </article>
+        <article class="card">
+          <h3>商业落地</h3>
+          <p>从痛点、MVP、试用、付费，到数据闭环。</p>
+          <a href="./08_商业落地/AI创业落地路线.md">进入章节</a>
+        </article>
+      </div>
+
+      <h2 class="section-title">按这个顺序学</h2>
+      <div class="steps">
+        <article class="card step">
+          <h3>1. 基础认知</h3>
+          <p>大模型、Token、上下文、Embedding、工具调用、应用架构。</p>
+          <a href="./01_基础认知/大模型应用基础.md">打开文档</a>
+        </article>
+        <article class="card step">
+          <h3>2. 提示词工程</h3>
+          <p>角色、任务、约束、少样本、格式化输出、反幻觉。</p>
+          <a href="./02_提示词工程/提示词工程实战.md">打开文档</a>
+        </article>
+        <article class="card step">
+          <h3>3. RAG 知识库</h3>
+          <p>文档解析、切块、向量库、检索优化、引用答案。</p>
+          <a href="./03_RAG知识库/RAG从入门到实战.md">打开文档</a>
+        </article>
+        <article class="card step">
+          <h3>4. 评测上线</h3>
+          <p>评测集、错误分类、日志、成本、灰度发布。</p>
+          <a href="./05_评测与上线/评测监控与上线.md">打开文档</a>
+        </article>
+        <article class="card step">
+          <h3>5. 微调</h3>
+          <p>SFT、LoRA、数据集、训练验收，以及什么时候不该微调。</p>
+          <a href="./04_微调与模型训练/模型微调入门.md">打开文档</a>
+        </article>
+        <article class="card step">
+          <h3>6. Agent 与商业落地</h3>
+          <p>工具调用、工作流、Agent 边界、AI 创业 MVP 和定价。</p>
+          <a href="./07_Agent与工具调用/Agent与工具调用入门.md">打开 Agent 章节</a>
+        </article>
+      </div>
+
+      <section class="figure">
+        <img src="./assets/images/llm_app_architecture.svg" alt="大模型应用架构图" />
+      </section>
+      <section class="figure">
+        <img src="./assets/images/rag_pipeline.svg" alt="RAG流程图" />
+      </section>
+    </main>
+  </body>
+</html>
+

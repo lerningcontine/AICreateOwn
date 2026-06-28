@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="大模型应用架构图">
+  <rect width="1200" height="720" fill="#fbfcf8"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#182029">大模型应用架构</text>
+  <text x="60" y="106" font-family="Arial, sans-serif" font-size="18" fill="#687381">模型只是中间一层，真正可用的应用还需要数据、工具、权限、评测和监控。</text>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#687381"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, sans-serif" font-size="18">
+    <rect x="70" y="190" width="170" height="90" rx="10" fill="#3d7dd8"/>
+    <text x="155" y="228" text-anchor="middle" font-weight="700" fill="white">用户入口</text>
+    <text x="155" y="256" text-anchor="middle" fill="white">Web / App / IM</text>
+    <rect x="320" y="170" width="210" height="130" rx="10" fill="white" stroke="#dfe6df" stroke-width="2"/>
+    <text x="425" y="215" text-anchor="middle" font-weight="700" fill="#182029">业务编排层</text>
+    <text x="425" y="248" text-anchor="middle" fill="#687381">路由 / 权限 / 流程</text>
+    <rect x="610" y="140" width="210" height="90" rx="10" fill="#4fb286"/>
+    <text x="715" y="178" text-anchor="middle" font-weight="700" fill="white">Prompt</text>
+    <text x="715" y="206" text-anchor="middle" fill="white">规则和输出格式</text>
+    <rect x="610" y="260" width="210" height="90" rx="10" fill="#ef6f6c"/>
+    <text x="715" y="298" text-anchor="middle" font-weight="700" fill="white">RAG 检索</text>
+    <text x="715" y="326" text-anchor="middle" fill="white">知识库和引用</text>
+    <rect x="610" y="380" width="210" height="90" rx="10" fill="#f6c85f"/>
+    <text x="715" y="418" text-anchor="middle" font-weight="700" fill="#182029">工具调用</text>
+    <text x="715" y="446" text-anchor="middle" fill="#182029">API / 数据库 / 计算</text>
+    <rect x="900" y="220" width="210" height="120" rx="10" fill="#182029"/>
+    <text x="1005" y="270" text-anchor="middle" font-weight="700" fill="white">大模型</text>
+    <text x="1005" y="302" text-anchor="middle" fill="white">理解 / 推理 / 生成</text>
+    <rect x="320" y="430" width="210" height="100" rx="10" fill="white" stroke="#dfe6df" stroke-width="2"/>
+    <text x="425" y="468" text-anchor="middle" font-weight="700" fill="#182029">评测监控</text>
+    <text x="425" y="500" text-anchor="middle" fill="#687381">质量 / 成本 / 延迟</text>
+    <rect x="900" y="450" width="210" height="90" rx="10" fill="#7b61ff"/>
+    <text x="1005" y="488" text-anchor="middle" font-weight="700" fill="white">答案输出</text>
+    <text x="1005" y="516" text-anchor="middle" fill="white">格式校验和展示</text>
+  </g>
+  <g stroke="#687381" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M240 235 H318"/>
+    <path d="M530 235 C560 200 570 185 608 185"/>
+    <path d="M530 235 C560 285 570 305 608 305"/>
+    <path d="M530 235 C560 380 570 425 608 425"/>
+    <path d="M820 185 C860 190 875 225 900 250"/>
+    <path d="M820 305 H900"/>
+    <path d="M820 425 C860 415 880 355 900 320"/>
+    <path d="M1005 340 V448"/>
+    <path d="M900 495 C760 610 550 575 462 532"/>
+    <path d="M425 430 V305"/>
+  </g>
+</svg>
+

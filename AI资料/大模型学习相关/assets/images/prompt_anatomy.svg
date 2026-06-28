@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="提示词结构图">
+  <rect width="1200" height="760" fill="#fbfcf8"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#182029">一个稳定 Prompt 的结构</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#687381">好提示词不是长，而是每一块都有明确作用。</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="130" y="160" width="940" height="520" rx="14" fill="#ffffff" stroke="#dfe6df" stroke-width="2"/>
+    <rect x="170" y="205" width="240" height="86" rx="10" fill="#3d7dd8"/>
+    <text x="290" y="242" text-anchor="middle" font-size="22" font-weight="700" fill="white">角色</text>
+    <text x="290" y="268" text-anchor="middle" font-size="15" fill="white">你是谁，用什么专业视角</text>
+    <rect x="480" y="205" width="240" height="86" rx="10" fill="#4fb286"/>
+    <text x="600" y="242" text-anchor="middle" font-size="22" font-weight="700" fill="white">任务</text>
+    <text x="600" y="268" text-anchor="middle" font-size="15" fill="white">要完成什么具体目标</text>
+    <rect x="790" y="205" width="240" height="86" rx="10" fill="#ef6f6c"/>
+    <text x="910" y="242" text-anchor="middle" font-size="22" font-weight="700" fill="white">背景</text>
+    <text x="910" y="268" text-anchor="middle" font-size="15" fill="white">业务场景和已知资料</text>
+    <rect x="170" y="340" width="240" height="86" rx="10" fill="#f6c85f"/>
+    <text x="290" y="377" text-anchor="middle" font-size="22" font-weight="700" fill="#182029">规则</text>
+    <text x="290" y="403" text-anchor="middle" font-size="15" fill="#182029">边界、禁止、判断标准</text>
+    <rect x="480" y="340" width="240" height="86" rx="10" fill="#7b61ff"/>
+    <text x="600" y="377" text-anchor="middle" font-size="22" font-weight="700" fill="white">示例</text>
+    <text x="600" y="403" text-anchor="middle" font-size="15" fill="white">少样本帮助模型对齐</text>
+    <rect x="790" y="340" width="240" height="86" rx="10" fill="#182029"/>
+    <text x="910" y="377" text-anchor="middle" font-size="22" font-weight="700" fill="white">输出格式</text>
+    <text x="910" y="403" text-anchor="middle" font-size="15" fill="white">JSON / 表格 / 列表</text>
+    <rect x="300" y="500" width="600" height="92" rx="10" fill="#eef6f0" stroke="#4fb286" stroke-width="2"/>
+    <text x="600" y="540" text-anchor="middle" font-size="24" font-weight="700" fill="#182029">用户输入</text>
+    <text x="600" y="568" text-anchor="middle" font-size="16" fill="#687381">每次变化的文本、问题、文档片段或业务数据</text>
+  </g>
+</svg>
+

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-label="是否需要微调决策图">
+  <rect width="1200" height="760" fill="#fbfcf8"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#182029">什么时候需要微调</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#687381">先判断问题类型，微调通常不是第一步。</text>
+  <defs>
+    <marker id="arrowFt" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#687381"/>
+    </marker>
+  </defs>
+  <g font-family="Arial, sans-serif" font-size="17">
+    <rect x="470" y="150" width="260" height="76" rx="12" fill="#182029"/>
+    <text x="600" y="196" text-anchor="middle" font-size="22" font-weight="700" fill="white">模型效果不好</text>
+    <rect x="150" y="300" width="250" height="82" rx="12" fill="#3d7dd8"/>
+    <text x="275" y="335" text-anchor="middle" font-size="20" font-weight="700" fill="white">不知道新知识？</text>
+    <text x="275" y="362" text-anchor="middle" fill="white">公司制度、产品文档</text>
+    <rect x="475" y="300" width="250" height="82" rx="12" fill="#4fb286"/>
+    <text x="600" y="335" text-anchor="middle" font-size="20" font-weight="700" fill="white">Prompt 不清楚？</text>
+    <text x="600" y="362" text-anchor="middle" fill="white">任务、格式、边界模糊</text>
+    <rect x="800" y="300" width="250" height="82" rx="12" fill="#ef6f6c"/>
+    <text x="925" y="335" text-anchor="middle" font-size="20" font-weight="700" fill="white">行为不稳定？</text>
+    <text x="925" y="362" text-anchor="middle" fill="white">风格、分类、格式</text>
+    <rect x="150" y="510" width="250" height="96" rx="12" fill="white" stroke="#3d7dd8" stroke-width="3"/>
+    <text x="275" y="548" text-anchor="middle" font-size="22" font-weight="700" fill="#182029">优先 RAG</text>
+    <text x="275" y="578" text-anchor="middle" fill="#687381">检索资料并要求引用</text>
+    <rect x="475" y="510" width="250" height="96" rx="12" fill="white" stroke="#4fb286" stroke-width="3"/>
+    <text x="600" y="548" text-anchor="middle" font-size="22" font-weight="700" fill="#182029">优先 Prompt</text>
+    <text x="600" y="578" text-anchor="middle" fill="#687381">补规则、示例和格式</text>
+    <rect x="800" y="510" width="250" height="96" rx="12" fill="white" stroke="#ef6f6c" stroke-width="3"/>
+    <text x="925" y="548" text-anchor="middle" font-size="22" font-weight="700" fill="#182029">再考虑微调</text>
+    <text x="925" y="578" text-anchor="middle" fill="#687381">SFT / LoRA / 偏好优化</text>
+  </g>
+  <g stroke="#687381" stroke-width="3" fill="none" marker-end="url(#arrowFt)">
+    <path d="M600 226 C520 255 390 275 275 300"/>
+    <path d="M600 226 V298"/>
+    <path d="M600 226 C680 255 810 275 925 300"/>
+    <path d="M275 382 V508"/>
+    <path d="M600 382 V508"/>
+    <path d="M925 382 V508"/>
+  </g>
+</svg>
+

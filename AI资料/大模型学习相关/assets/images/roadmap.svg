@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="大模型应用从0到1学习路线图">
+  <rect width="1200" height="520" fill="#fbfcf8"/>
+  <text x="60" y="72" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#182029">大模型应用从 0 到 1 学习路线</text>
+  <text x="60" y="110" font-family="Arial, sans-serif" font-size="18" fill="#687381">先做出 Demo，再做评测，最后才考虑微调和产品化。</text>
+  <line x1="125" y1="260" x2="1075" y2="260" stroke="#dfe6df" stroke-width="8" stroke-linecap="round"/>
+  <g font-family="Arial, sans-serif">
+    <circle cx="130" cy="260" r="42" fill="#3d7dd8"/>
+    <text x="130" y="268" text-anchor="middle" font-size="24" font-weight="700" fill="white">1</text>
+    <text x="80" y="335" font-size="22" font-weight="700" fill="#182029">基础认知</text>
+    <text x="66" y="366" font-size="15" fill="#687381">Token / API / 上下文</text>
+    <circle cx="320" cy="260" r="42" fill="#4fb286"/>
+    <text x="320" y="268" text-anchor="middle" font-size="24" font-weight="700" fill="white">2</text>
+    <text x="266" y="335" font-size="22" font-weight="700" fill="#182029">提示词工程</text>
+    <text x="248" y="366" font-size="15" fill="#687381">角色 / 约束 / 格式</text>
+    <circle cx="510" cy="260" r="42" fill="#ef6f6c"/>
+    <text x="510" y="268" text-anchor="middle" font-size="24" font-weight="700" fill="white">3</text>
+    <text x="470" y="335" font-size="22" font-weight="700" fill="#182029">RAG</text>
+    <text x="426" y="366" font-size="15" fill="#687381">切块 / 检索 / 引用</text>
+    <circle cx="700" cy="260" r="42" fill="#f6c85f"/>
+    <text x="700" y="268" text-anchor="middle" font-size="24" font-weight="700" fill="#182029">4</text>
+    <text x="656" y="335" font-size="22" font-weight="700" fill="#182029">评测上线</text>
+    <text x="630" y="366" font-size="15" fill="#687381">指标 / 日志 / 成本</text>
+    <circle cx="890" cy="260" r="42" fill="#7b61ff"/>
+    <text x="890" y="268" text-anchor="middle" font-size="24" font-weight="700" fill="white">5</text>
+    <text x="846" y="335" font-size="22" font-weight="700" fill="#182029">模型微调</text>
+    <text x="824" y="366" font-size="15" fill="#687381">SFT / LoRA / 数据</text>
+    <circle cx="1080" cy="260" r="42" fill="#182029"/>
+    <text x="1080" y="268" text-anchor="middle" font-size="24" font-weight="700" fill="white">6</text>
+    <text x="1024" y="335" font-size="22" font-weight="700" fill="#182029">商业闭环</text>
+    <text x="1000" y="366" font-size="15" fill="#687381">MVP / 反馈 / 付费</text>
+  </g>
+</svg>
+
