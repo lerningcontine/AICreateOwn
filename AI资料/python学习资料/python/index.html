@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python 从 0 开始互动教程</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#start" aria-label="回到开头">
+        <span class="brand-mark">Py</span>
+        <span>Python 零基础互动教程</span>
+      </a>
+      <nav class="nav" aria-label="课程导航">
+        <a href="#roadmap">路线</a>
+        <a href="#lessons">课程</a>
+        <a href="#projects">项目</a>
+        <a href="#check">检测</a>
+      </nav>
+    </header>
+
+    <main id="start">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">给完全没写过代码的人</p>
+          <h1>把 Python 学成一门能动手解决问题的工具</h1>
+          <p class="lead">
+            这不是一份干巴巴教案，而是一套可以边看、边点、边练的小课程。你会从“代码是什么”开始，
+            一路写到自己的记账本、猜数字游戏和待办清单。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#lessons">开始第一课</a>
+            <a class="button ghost" href="./examples/01_hello_world.py">打开示例代码</a>
+          </div>
+        </div>
+        <div class="code-stage" aria-label="Python 代码动画演示">
+          <div class="terminal-window">
+            <div class="terminal-dots"><span></span><span></span><span></span></div>
+            <pre><code id="typing-code"></code><span class="cursor"></span></pre>
+          </div>
+          <div class="orbit one">变量</div>
+          <div class="orbit two">循环</div>
+          <div class="orbit three">函数</div>
+        </div>
+      </section>
+
+      <section id="roadmap" class="band">
+        <div class="section-head">
+          <p class="eyebrow">学习路线</p>
+          <h2>先会用，再讲深</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>01</span>
+            <h3>看见代码</h3>
+            <p>理解程序就是“按顺序执行的指令”，学会运行第一个 Python 文件。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>装东西</h3>
+            <p>用变量、列表和字典保存文字、数字、清单、账单这些真实数据。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>做判断</h3>
+            <p>让程序根据条件走不同路线，比如余额不足、分数等级、登录状态。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>重复做</h3>
+            <p>用循环处理很多条数据，让电脑做重复活。</p>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>变成作品</h3>
+            <p>把知识拼成三个小项目，真正体验“我写了一个能用的东西”。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="playground">
+        <div class="section-head">
+          <p class="eyebrow">动画理解</p>
+          <h2>程序像一条会发光的流水线</h2>
+        </div>
+        <div class="flow-card">
+          <div class="flow-lane" aria-hidden="true">
+            <span class="packet">输入</span>
+            <span class="machine">变量</span>
+            <span class="machine">判断</span>
+            <span class="machine">循环</span>
+            <span class="machine">输出</span>
+          </div>
+          <div class="flow-text">
+            <h3>记住一个核心画面</h3>
+            <p>
+              Python 做的事很朴素：接收输入，把数据存起来，按规则加工，最后输出结果。
+              学习时不要急着背概念，先问自己：“这段代码拿了什么？改了什么？最后给我什么？”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="lessons" class="band light">
+        <div class="section-head">
+          <p class="eyebrow">课程正文</p>
+          <h2>12 节课，从 0 到能写小工具</h2>
+        </div>
+        <div class="lesson-grid" id="lesson-grid"></div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="section-head">
+          <p class="eyebrow">小项目</p>
+          <h2>学完就做，不让知识躺平</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <span class="tag">项目 1</span>
+            <h3>猜数字游戏</h3>
+            <p>练习随机数、输入、条件判断和循环。目标：让程序提示太大、太小、猜中了。</p>
+            <a href="./examples/project_guess_number.py">查看代码</a>
+          </article>
+          <article class="project-card">
+            <span class="tag">项目 2</span>
+            <h3>记账本</h3>
+            <p>练习列表、字典、求和和格式化输出。目标：记录收入支出，计算余额。</p>
+            <a href="./examples/project_budget_book.py">查看代码</a>
+          </article>
+          <article class="project-card">
+            <span class="tag">项目 3</span>
+            <h3>待办清单</h3>
+            <p>练习函数、文件读写和菜单交互。目标：新增、查看、完成任务。</p>
+            <a href="./examples/project_todo_list.py">查看代码</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="check" class="band">
+        <div class="section-head">
+          <p class="eyebrow">即时检测</p>
+          <h2>5 道小题，测测今天吸收了多少</h2>
+        </div>
+        <div class="quiz" id="quiz"></div>
+        <p class="score" id="score">选择答案后会显示得分。</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>学习建议：每节课先看 5 分钟，再手敲 15 分钟，最后自己改 3 个地方。</p>
+      <a href="./checklists/30_day_plan.md">打开 30 天学习计划</a>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
+
